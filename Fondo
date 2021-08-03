@@ -1,1 +1,71 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MyWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MyWorld extends World
+{
+
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    public MyWorld()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(840, 600, 1); 
+        prepare();
+    }
+    
+    private void prepare()
+    {
+        base base = new base ();
+        addObject(base,467,547);
+    }
+    
+    public void act(){
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new hamburger(), Greenfoot.getRandomNumber(180) + 0, 100);
+        } //hambuergesa
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new hamburger(), Greenfoot.getRandomNumber(180) - 0, 200);
+        }//hambuergesa
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new hamburger(), Greenfoot.getRandomNumber(180) + 0, 300);
+        }//hambuergesa
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new hamburger(), Greenfoot.getRandomNumber(180) - 0, 500);
+        }//hambuergesa
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new hamburger(), Greenfoot.getRandomNumber(180) + 0, 600);
+        }//hambuergesa
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new potato(), Greenfoot.getRandomNumber(600) + 0, 100);
+        }
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new potato(), Greenfoot.getRandomNumber(600) + 0, 300);
+        }
+        
+        if (Greenfoot.getRandomNumber(125)<1){
+            addObject(new potato(), Greenfoot.getRandomNumber(600) + 0, 500);
+        }
+        
+        if (Greenfoot.getRandomNumber(300)<1){
+            addObject(new apple(), Greenfoot.getRandomNumber(200) + 200, 250);
+        }
+        
+        if (Greenfoot.getRandomNumber(300)<1){
+            addObject(new banana(), Greenfoot.getRandomNumber(200) + 200, 400);
+        }
+    }
+}
 
